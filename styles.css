@@ -1,1 +1,93 @@
-/* Write your CSS here! */
+html {
+    background-color: rgb(54, 54, 54)
+}
+header {
+    margin: auto;
+    max-width: 1400px;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    margin: 0;
+}
+h4 {margin: 0;}
+p {margin: 4px 30px;}
+ul {margin: 5px 10px;}
+body {
+    background-color: rgb(35, 35, 35);
+    color: rgb(109, 226, 14);
+    margin: auto;
+    max-width: 1400px;
+}
+.container {
+    margin: auto;
+    display: flex;
+}
+
+nav {
+    flex-direction: row;
+    
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+}
+.nav-item {
+    padding: 10px 16px;
+    border: 1px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    color: rgb(109, 226, 14);
+}
+.nav-item:active, .nav-item:hover {
+    background-color: rgb(109, 226, 14);
+    border-color: rgb(109, 226, 14);
+    color: rgb(35, 35, 35);;
+}
+a {
+    text-decoration: none;
+    color: rgb(29, 212, 245);
+}
+a:visited {
+    color: inherit
+}
+article {
+    display: flex;
+    flex-direction: column;
+}
+.article-header {
+    padding: 5px;
+    border-bottom: 1px ridge rgb(109, 226, 14);;
+    
+}
+.article-header a {
+    color: rgb(109, 226, 14);
+}
+.article-content {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    flex-wrap: true;
+    min-width: 300px;
+}
+
+
+.content-section {
+    flex-direction: row;
+}
+
+.image-section {
+    flex-basis: 1;
+}
+.image-section img {
+    max-width: 400px;
+}
+
+.text-section {
+    flex-basis: 2;
+    display: block;
+    flex-direction: row;
+}
+
