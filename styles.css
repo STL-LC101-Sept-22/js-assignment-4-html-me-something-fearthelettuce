@@ -43,7 +43,7 @@ body {
     position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-    background-color: rgb(35, 35, 35);;
+    background-color: rgb(35, 35, 35);
 }
 nav ul {
     display: flex;
@@ -52,11 +52,12 @@ nav ul {
     justify-content: center;
 }
 .nav-item {
-    padding: 10px 16px;
+    padding: 4px 6px;
     border: 1px solid;
-    border-radius: 8px;
+    border-radius: 3px;
     cursor: pointer;
     color: rgb(147, 218, 25);
+    font-size: smaller;
 }
 .nav-item:active, .nav-item:hover {
     background-color: rgb(147, 218, 25);
@@ -123,6 +124,7 @@ article {
 .text-item {
     flex-direction: row;
     display: flex;
+    margin: 6px 0;
 }
 .content-section {
     flex-direction: row;
@@ -161,7 +163,7 @@ article {
 .care-guide p {
     display: flex;
     align-items: center;
-    padding: 10px 4px;
+    padding: 0px 4px;
 }
 .care-guide ul {
     list-style: none;
@@ -181,6 +183,17 @@ article {
     padding-inline-start: 20px;
 }
 @media screen and (min-width: 1150px) {
+    #page-nav {
+        padding: 0 2px;
+        margin: 0;
+    }
+    .nav-item {
+        padding: 10px 16px;
+        border: 1px solid;
+        border-radius: 8px;
+        cursor: pointer;
+        color: rgb(147, 218, 25);
+    }
     .article-content, .article-content-alt {
         flex-wrap: nowrap;
     }
@@ -193,16 +206,13 @@ article {
         flex: 2;
     }
     .image-section {
-        
         margin: 0;
         justify-content: flex-end;
-
     }
     .image-section img {
         flex: 1;
         margin: 0;
         padding: 0;
         flex-basis: 330px;
-        
     }
 }
