@@ -1,5 +1,7 @@
 
-html {font-family: 'Righteous', 'sans-serif';}
+html {
+    font-family: 'Righteous', 'sans-serif';
+}
 header, footer {
     margin: auto;
     max-width: 1500px;
@@ -26,6 +28,9 @@ body {
 }
 #mainHeading {
     color: red;
+    background: -webkit-linear-gradient(rgb(138, 251, 0), rgb(253, 181, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .funParagraph {
     color: green;
@@ -69,7 +74,6 @@ article {
     margin: 50px 0;
     border-radius: 15px;
     overflow:hidden;
-
 }
 .article-header {
     padding: 10px;
@@ -86,9 +90,13 @@ article {
     justify-content: space-around;
 }
 .icon {
-    width: 32px;
+    width: 40px;
+    height: 40px;
+    display:inline-flex;
+    align-self: center;
+    margin: 0;
 }
-.soil-icon {
+.media-icon {
 
 }
 .water-icon {
@@ -98,8 +106,20 @@ article {
     filter: invert(76%) sepia(36%) saturate(4111%) hue-rotate(149deg) brightness(102%) contrast(92%);
 }
 .temperature-icon {
-    filter: invert(81%) sepia(74%) saturate(3123%) hue-rotate(334deg) brightness(99%) contrast(93%);
-    color: #f4ac32
+}
+.icon-with-label {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+.icon-label {
+    font-size: 8px;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 2px;
+    display: flex;
+    color: rgb(216, 227, 196);
 }
 .text-item {
     flex-direction: row;
@@ -128,15 +148,30 @@ article {
     padding: 10px 10px;
     flex: 3;
     flex-basis: 1050px;
+    line-height: 1.4;
 }
 .care-guide {
     display: flex;
     flex-direction: column;
     flex: 3;
     justify-content: space-around;
-    
 }
 
+.care-guide p {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.care-guide ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 4px 30px;
+    
+}
+.care-guide li {
+    padding: 2px 0px;
+    
+}
 @media screen and (min-width: 1150px) {
     .article-content {
         flex-wrap: nowrap;
