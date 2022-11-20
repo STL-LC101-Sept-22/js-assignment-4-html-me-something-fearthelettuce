@@ -1,4 +1,5 @@
 
+html {font-family: 'Righteous', 'sans-serif';}
 header, footer {
     margin: auto;
     max-width: 1500px;
@@ -83,9 +84,27 @@ article {
     padding: 0;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.icon {
+    width: 32px;
+}
+.soil-icon {
 
 }
-
+.water-icon {
+    filter: invert(45%) sepia(97%) saturate(759%) hue-rotate(191deg) brightness(94%) contrast(95%);
+}
+.humidity-icon {
+    filter: invert(76%) sepia(36%) saturate(4111%) hue-rotate(149deg) brightness(102%) contrast(92%);
+}
+.temperature-icon {
+    filter: invert(81%) sepia(74%) saturate(3123%) hue-rotate(334deg) brightness(99%) contrast(93%);
+    color: #f4ac32
+}
+.text-item {
+    flex-direction: row;
+    display: flex;
+}
 .content-section {
     flex-direction: row;
     flex-wrap: wrap;
