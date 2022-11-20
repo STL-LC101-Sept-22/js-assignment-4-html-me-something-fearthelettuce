@@ -14,7 +14,7 @@ p {margin: 4px 30px;}
 ul {margin: 5px 10px;}
 body {
     background-color: rgb(35, 35, 35);
-    color: rgb(109, 226, 14);
+    color: rgb(147, 218, 25);
     margin: auto;
     max-width: 1600px;
 }
@@ -38,11 +38,11 @@ nav ul {
     border: 1px solid;
     border-radius: 8px;
     cursor: pointer;
-    color: rgb(109, 226, 14);
+    color: rgb(147, 218, 25);
 }
 .nav-item:active, .nav-item:hover {
-    background-color: rgb(109, 226, 14);
-    border-color: rgb(109, 226, 14);
+    background-color: rgb(147, 218, 25);
+    border-color: rgb(147, 218, 25);
     color: rgb(35, 35, 35);;
 }
 a {
@@ -57,6 +57,8 @@ article {
     flex-direction: column;
     background-color: rgb(54, 54, 54);
     margin: 50px 0;
+    border-radius: 15px;
+    overflow:hidden;
 
 }
 .article-header {
@@ -64,14 +66,15 @@ article {
     
 }
 .article-header a {
-    color: rgb(109, 226, 14);
+    color: rgb(147, 218, 25);
 }
 .article-content {
     display: flex;
     flex-direction: row;
     padding: 0;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+
 }
 
 .content-section {
@@ -81,32 +84,49 @@ article {
 
 .image-section {
     display: flex;
-    flex: 1;
+    flex-basis: 500px;
     justify-content: center;
 }
 .image-section img {
     max-width: 500px;
     flex: 1;
+    padding: 0;
+    justify-content: flex-end;
 }
 
 .text-section {
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
+    padding: 10px 10px;
+    flex: 3;
+    flex-basis: 1050px;
 }
 .care-guide {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 3;
     justify-content: space-around;
+    
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1150px) {
     .article-content {
         flex-wrap: nowrap;
     }
+    .text-section {
+        flex: 2;
+    }
+    .image-section {
+        
+        margin: 0;
+        justify-content: flex-end;
 
+    }
     .image-section img {
-        max-width: 600px;
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        flex-basis: 330px;
+        
     }
 }
