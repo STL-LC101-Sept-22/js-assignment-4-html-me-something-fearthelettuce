@@ -15,16 +15,25 @@ ul {margin: 5px 10px;}
 body {
     background-color: rgb(35, 35, 35);
     color: rgb(147, 218, 25);
-    margin: auto;
+    margin: 8px;
     max-width: 1600px;
+    display: block;
 }
 .container {
     margin: auto;
     display: flex;
 }
-
-nav {
-    flex-direction: row;
+#mainHeading {
+    color: red;
+}
+.funParagraph {
+    color: green;
+    
+}
+#page-nav {
+    flex-direction: column;
+    padding: 0 2px;
+    margin: 0;
     
 }
 nav ul {
