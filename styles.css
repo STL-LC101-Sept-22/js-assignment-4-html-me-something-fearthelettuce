@@ -13,13 +13,13 @@ h1 {
 }
 h2 {margin:0;}
 h4 {margin: 0;}
-p {margin: 4px 30px;}
+p {margin: 4px 6px;}
 ul {margin: 5px 10px;}
 body {
     background-color: rgb(35, 35, 35);
     color: rgb(147, 218, 25);
-    margin: 8px;
-    max-width: 1600px;
+    margin: 8px auto;
+    max-width: 1200px;
     display: block;
 }
 .container {
@@ -28,7 +28,7 @@ body {
 }
 #mainHeading {
     color: red;
-    background: -webkit-linear-gradient(rgb(138, 251, 0), rgb(253, 181, 0));
+    background: -webkit-linear-gradient(rgb(138, 251, 0), rgb(253, 0, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -40,7 +40,10 @@ body {
     flex-direction: column;
     padding: 0 2px;
     margin: 0;
-    
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    background-color: rgb(35, 35, 35);;
 }
 nav ul {
     display: flex;
@@ -82,7 +85,7 @@ article {
 .article-header a {
     color: rgb(147, 218, 25);
 }
-.article-content {
+.article-content, .article-content-alt {
     display: flex;
     flex-direction: row;
     padding: 0;
@@ -96,17 +99,13 @@ article {
     align-self: center;
     margin: 0;
 }
-.media-icon {
-
-}
 .water-icon {
     filter: invert(45%) sepia(97%) saturate(759%) hue-rotate(191deg) brightness(94%) contrast(95%);
 }
 .humidity-icon {
     filter: invert(76%) sepia(36%) saturate(4111%) hue-rotate(149deg) brightness(102%) contrast(92%);
 }
-.temperature-icon {
-}
+
 .icon-with-label {
     flex-direction: column;
     align-items: center;
@@ -139,6 +138,7 @@ article {
     max-width: 500px;
     flex: 1;
     padding: 0;
+    object-fit: cover;
     justify-content: flex-end;
 }
 
@@ -155,12 +155,13 @@ article {
     flex-direction: column;
     flex: 3;
     justify-content: space-around;
+    margin: 0 4px 0 8px;
 }
 
 .care-guide p {
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 4px;
 }
 .care-guide ul {
     list-style: none;
@@ -172,10 +173,22 @@ article {
     padding: 2px 0px;
     
 }
+.text-plus-list {
+    display: flex;
+    flex-direction: column;
+}
+.text-plus-list ul {
+    padding-inline-start: 20px;
+}
 @media screen and (min-width: 1150px) {
-    .article-content {
+    .article-content, .article-content-alt {
         flex-wrap: nowrap;
     }
+
+    .article-content-alt .text-section {
+        order: 2;
+    }
+
     .text-section {
         flex: 2;
     }
