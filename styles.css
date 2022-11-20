@@ -4,19 +4,16 @@ header, footer {
     text-align: center;
     padding: 20px;
 }
-h1 {
+h1, h2 {
     margin: 0;
 }
-h2 {margin:0;}
-h4 {margin: 0;}
-p {margin: 4px 6px;}
-ul {margin: 5px 10px;}
+p, ul {margin: .25em .37em;}
 body {
     background-color: rgb(35, 35, 35);
     color: rgb(147, 218, 25);
-    margin: 8px;
+    margin: .5em;
     /* margin: auto; */
-    max-width: 1200px;
+    max-width: 75em;
     display: block;
     /* font-family: 'Righteous', 'sans-serif'; */
     font-family: 'Verdana';
@@ -38,7 +35,7 @@ body {
 }
 #page-nav {
     flex-direction: column;
-    padding: 0 2px;
+    padding: 0 .12em;
     margin: 0;
     position: -webkit-sticky;
 	position: sticky;
@@ -48,11 +45,11 @@ body {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 1.5em;
     justify-content: center;
 }
 .nav-item {
-    padding: 4px 6px;
+    padding: .25em .37em;
     border: 1px solid;
     border-radius: 3px;
     cursor: pointer;
@@ -75,12 +72,12 @@ article {
     display: flex;
     flex-direction: column;
     background-color: rgb(54, 54, 54);
-    margin: 50px 0;
-    border-radius: 15px;
+    margin: 3em 0;
+    border-radius: 1em;
     overflow:hidden;
 }
 .article-header {
-    padding: 10px;
+    padding: .7em;
     
 }
 .article-header a {
@@ -94,8 +91,8 @@ article {
     justify-content: space-around;
 }
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 2.5em;
+    height: 2.5em;
     display:inline-flex;
     align-self: center;
     margin: 0;
@@ -114,17 +111,17 @@ article {
     display:flex;
 }
 .icon-label {
-    font-size: 8px;
+    font-size: .5em;
     justify-content: center;
     padding: 0;
-    margin-bottom: 2px;
+    margin-bottom: .1em;
     display: flex;
     color: rgb(216, 227, 196);
 }
 .text-item {
     flex-direction: row;
     display: flex;
-    margin: 6px 0;
+    margin: .37em 0;
 }
 .content-section {
     flex-direction: row;
@@ -137,7 +134,7 @@ article {
     justify-content: center;
 }
 .image-section img {
-    max-width: 500px;
+    max-width: 32em;
     flex: 1;
     padding: 0;
     object-fit: cover;
@@ -147,9 +144,9 @@ article {
 .text-section {
     display: flex;
     flex-direction: column;
-    padding: 10px 10px;
+    padding: .63em .63em;
     flex: 3;
-    flex-basis: 1050px;
+    flex-basis: 65em;
     line-height: 1.4;
 }
 .care-guide {
@@ -157,13 +154,13 @@ article {
     flex-direction: column;
     flex: 3;
     justify-content: space-around;
-    margin: 0 4px 0 8px;
+    margin: 0 .25em 0 .5em;
 }
 
 .care-guide p {
     display: flex;
     align-items: center;
-    padding: 0px 4px;
+    padding: 0px .25em;
 }
 .care-guide ul {
     list-style: none;
@@ -172,7 +169,7 @@ article {
     
 }
 .care-guide li {
-    padding: 2px 0px;
+    padding: .1em 0px;
     
 }
 .text-plus-list {
@@ -180,17 +177,17 @@ article {
     flex-direction: column;
 }
 .text-plus-list ul {
-    padding-inline-start: 20px;
+    padding-inline-start: 1.5em;
 }
 @media screen and (min-width: 1150px) {
     #page-nav {
-        padding: 0 2px;
+        padding: 0 1.em;
         margin: 0;
     }
     .nav-item {
-        padding: 10px 16px;
+        padding: .63em 1em;
         border: 1px solid;
-        border-radius: 8px;
+        border-radius: .5em;
         cursor: pointer;
         color: rgb(147, 218, 25);
     }
@@ -213,6 +210,6 @@ article {
         flex: 1;
         margin: 0;
         padding: 0;
-        flex-basis: 330px;
+        flex-basis: 21em;
     }
 }
