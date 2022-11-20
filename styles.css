@@ -1,1 +1,219 @@
-/* Write your CSS here! */
+header, footer {
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+}
+h1, h2 {
+    margin: 0;
+}
+p, ul {margin: .25em .37em;}
+body {
+    background-color: rgb(35, 35, 35);
+    color: rgb(147, 218, 25);
+    margin: 8px; /*TODO - change to Auto */
+    /* margin: auto; */
+    max-width: 75em;
+    display: block;
+    /* font-family: 'Righteous', 'sans-serif'; */
+    font-family: 'Verdana';
+}
+
+.container {
+    margin: auto;
+    display: flex;
+}
+#mainHeading {
+    color: red;
+    background: -webkit-linear-gradient(rgb(138, 251, 0), rgb(253, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.funParagraph {
+    color: green;
+    
+}
+#page-nav {
+    flex-direction: column;
+    padding: 0 .12em;
+    margin: 0 2em;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    background-color: rgb(35, 35, 35);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: .6em;
+    justify-content: center;
+    margin: auto;
+}
+.nav-item {
+    padding: .25em .37em;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    color: rgb(147, 218, 25);
+    font-size: smaller;
+}
+.nav-item:active, .nav-item:hover {
+    background-color: rgb(147, 218, 25);
+    border-color: rgb(147, 218, 25);
+    color: rgb(35, 35, 35);;
+}
+a {
+    text-decoration: none;
+    color: rgb(29, 212, 245);
+}
+a:visited {
+    color: inherit
+}
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(54, 54, 54);
+    margin: 3em 0;
+    border-radius: 1em;
+    overflow:hidden;
+}
+.article-header {
+    padding: .7em;
+    
+}
+.article-header a {
+    color: rgb(147, 218, 25);
+}
+.article-content, .article-content-alt {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.icon {
+    width: 5em;
+    height: 5em;
+    display:inline-flex;
+    align-self: center;
+    margin: 0;
+}
+.water-icon {
+    filter: invert(45%) sepia(97%) saturate(759%) hue-rotate(191deg) brightness(94%) contrast(95%);
+}
+.humidity-icon {
+    filter: invert(76%) sepia(36%) saturate(4111%) hue-rotate(149deg) brightness(102%) contrast(92%);
+}
+
+.icon-with-label {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+.icon-label {
+    font-size: .5em;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: .1em;
+    display: flex;
+    color: rgb(216, 227, 196);
+}
+.text-item {
+    flex-direction: row;
+    display: flex;
+    margin: .37em 0;
+}
+.content-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    display: flex;
+    flex-basis: 500px;
+    justify-content: center;
+}
+.image-section img {
+    max-width: 32em;
+    flex: 1;
+    padding: 0;
+    object-fit: cover;
+    justify-content: flex-end;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    padding: .63em .63em;
+    flex: 3;
+    flex-basis: 65em;
+    line-height: 1.4;
+}
+.care-guide {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    justify-content: space-around;
+    margin: 0 .25em 0 .5em;
+}
+
+.care-guide p {
+    display: flex;
+    align-items: center;
+    padding: 0px .25em;
+}
+.care-guide ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 4px 30px;
+    
+}
+.care-guide li {
+    padding: .1em 0px;
+    
+}
+.text-plus-list {
+    display: flex;
+    flex-direction: column;
+}
+.text-plus-list ul {
+    padding-inline-start: 1.5em;
+}
+@media screen and (min-width: 1150px) {
+    #page-nav {
+        padding: 0 1.em;
+        margin: 0;
+    }
+    .nav-item {
+        padding: .63em 1em;
+        border: 1px solid;
+        border-radius: .5em;
+        cursor: pointer;
+        color: rgb(147, 218, 25);
+    }
+    .article-content, .article-content-alt {
+        flex-wrap: nowrap;
+    }
+
+    .article-content-alt .text-section {
+        order: 2;
+    }
+
+    .text-section {
+        flex: 2;
+    }
+    .image-section {
+        margin: 0;
+        justify-content: flex-end;
+    }
+    .image-section img {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        flex-basis: 21em;
+    }
+    .icon {
+        width: 2.5em;
+        height: 2.5em;
+    }
+}
