@@ -1,7 +1,3 @@
-
-html {
-    font-family: 'Righteous', 'sans-serif';
-}
 header, footer {
     margin: auto;
     max-width: 1500px;
@@ -18,10 +14,14 @@ ul {margin: 5px 10px;}
 body {
     background-color: rgb(35, 35, 35);
     color: rgb(147, 218, 25);
-    margin: 8px auto;
+    margin: 8px;
+    /* margin: auto; */
     max-width: 1200px;
     display: block;
+    /* font-family: 'Righteous', 'sans-serif'; */
+    font-family: 'Verdana';
 }
+
 .container {
     margin: auto;
     display: flex;
