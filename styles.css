@@ -1,8 +1,7 @@
 header, footer {
     margin: auto;
-    max-width: 1500px;
     text-align: center;
-    padding: 20px;
+    padding: 1em;
 }
 h1, h2 {
     margin: 0;
@@ -36,7 +35,7 @@ body {
 #page-nav {
     flex-direction: column;
     padding: 0 .12em;
-    margin: 0;
+    margin: 0 2em;
     position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -45,8 +44,9 @@ body {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 1.5em;
+    gap: .6em;
     justify-content: center;
+    margin: auto;
 }
 .nav-item {
     padding: .25em .37em;
@@ -91,8 +91,8 @@ article {
     justify-content: space-around;
 }
 .icon {
-    width: 2.5em;
-    height: 2.5em;
+    width: 3.5em;
+    height: 3.5em;
     display:inline-flex;
     align-self: center;
     margin: 0;
